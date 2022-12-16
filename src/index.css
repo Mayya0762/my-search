@@ -1,13 +1,99 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F3CCFF;
+  margin-top: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.block {
+  padding: 40px;
+  background-color: #FFFFD0;
+}
+.picture {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+
+.cartIcon {
+  width: 70px;
+}
+
+.trashIcon {
+  width: 25px;
+}
+.categoryButtonSelected {
+  background-color: #F3CCFF;
+}
+
+.categoryButton:hover {
+  background-color: #f9dd87;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+}
+p, h2, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+}
+
+button {
+  background-color: #f9dd87;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.numeric {
+  font-size: 20px;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.small {
+  width: 90px;
+}
+
+@media all and (max-width:500px) {
+  h1 {
+    font-size: 20px;
+  }
+  .numeric, button, p, h2, h3 {
+    font-size: 15px;
+  }
+  .picture {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+  .cartIcon {
+    width: 50px;
+  }
+  .block {
+    padding: 0px;
+  }
+  .small {
+    width: 70px;
+  }
 }
